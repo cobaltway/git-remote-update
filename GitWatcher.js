@@ -26,7 +26,6 @@ class GitWatcher extends EventEmitter {
     }
 
     fetch() {
-        console.log(Object.keys(this));
         this.repository.fetchAll()
         .then(() => {
             this.repository.getReferenceCommit(this.remoteBranch)
