@@ -2,7 +2,7 @@
 
 This library exposes a single object to watch for a remote git repo changes, and to update a local git repo. It is intended to work well with github.
 
-Its process is quite simple, and was **not** designed to handle out of the box situations where the updated code has received commits from another source than the watched on. By the way, it is quite generic so it probably can be easely used to do so.
+Its process is quite simple, and was **not** designed to handle out-of-the-box situations where the updated code has received commits from another source than the one watched. By the way, it is quite generic so it probably can be easily used to do so.
 
 The git client used is the excellent [nodegit](http://www.nodegit.org/).
 
@@ -16,9 +16,9 @@ The git client used is the excellent [nodegit](http://www.nodegit.org/).
 
 ## Intended use case
 
-You own a server, which host a process (a web service, a bot, etc).
+You own a server, which hosts a process (a web service, a bot, etc).
 
-You want to update the code on your server by using github (or any other remote git repo). Each time you push a change on the dedicated github repo from your personnal computer, you want the server to update its code.
+You want to update the code on your server by using github (or any other remote git repo). Each time you push a change on the dedicated github repo from your personal computer, you want the server to update its code.
 
 Do the following:
 - Create a repo on github and put your code in (including git-remote-update handlers)
@@ -53,7 +53,7 @@ Look once at the remote branch.
 
 **watch(interval)**
 
-Call fetch each `interval` (in ms, default 30000), so it can look for changes on the repo over time. Return a function that you can call to stop watching.
+Call fetch each `interval` (in ms, default 30000), so it can look for changes on the repo over time. Returns a function that you can call to stop watching.
 
 **update()**
 
@@ -70,6 +70,6 @@ comparison      | A comparison is done, so you can make your own comparison func
 newerCommit     | There is a more recent commit on the remote branch                         | remoteCommit, localCommit
 differentCommit | The last commit id on the remote branch is different from the local        | remoteCommit, localCommit
 updated         | Update is done                                                             | -
-error           | An error happend                                                           | error
+error           | An error happened                                                          | error
 
 `remoteCommit` and `localCommit` are commit objects from nodegit, you can have documentation for them [on nodegit website](http://www.nodegit.org/api/commit/).
