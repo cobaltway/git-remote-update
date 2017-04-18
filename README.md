@@ -23,7 +23,7 @@ You want to update the code on your server by using github (or any other remote 
 Do the following:
 - Create a repo on github and put your code in (including git-remote-update handlers)
 - Clone the repo on your server
-- On your server, start your script with forever [forever](https://github.com/foreverjs/forever); this is a client that will restart your script if it ends
+- On your server, start your script with [forever](https://github.com/foreverjs/forever); this is a client that will restart your script if it ends
 - On your code, there should be something like that, which will simply kill your script after an update is done (and forever will gently restart it):
 
 ```
