@@ -53,7 +53,7 @@ Look once at the remote branch.
 
 **watch(interval)**
 
-Call fetch each `interval` (in ms, default 30000), so it can look for changes on the repo over time.
+Call fetch each `interval` (in ms, default 30000), so it can look for changes on the repo over time. Return a function that you can call to stop watching.
 
 **update()**
 
