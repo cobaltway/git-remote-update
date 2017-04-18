@@ -1,0 +1,24 @@
+{
+  "name": "git-remote-update",
+  "version": "0.0.1",
+  "description": "A simple object to watch for git repo changes and update the local code",
+  "main": "GitWatcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "event-emitter-es6": "^1.1.5",
+    "nodegit": "^0.18.0"
+  },
+  "keywords": [
+    "git",
+    "github",
+    "update",
+    "remote",
+    "watch",
+    "repository"
+  ],
+  "author": "Cobaltway",
+  "repository": "cobaltway/git-remote-update",
+  "license": "MIT"
+}
