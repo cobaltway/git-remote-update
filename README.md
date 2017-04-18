@@ -40,6 +40,7 @@ This library exposes the GitWatcher class. GitWatcher is a simple event emitter.
 **new GitWatcher(config)**
 
 The `config` is an object with the following values:
+
 Option       | Description                                                                | Default
 ------------ | -------------------------------------------------------------------------  | ---------------
 git          | Location of the git file (relative to the script entry point, or fullpath) | './.git'
@@ -52,7 +53,7 @@ Look once at the remote branch.
 
 **watch(interval)**
 
-Call fetch each `interval` (in ms, default 30000), so it can look for changes on the repo overtime.
+Call fetch each `interval` (in ms, default 30000), so it can look for changes on the repo over time.
 
 **update()**
 
