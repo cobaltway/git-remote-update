@@ -2,7 +2,7 @@
 
 This library exposes a single object to watch for a remote git repo changes, and to update a local git repo. It is intended to work well with github.
 
-Its process is quite simple, and was **not** designed to handle out-of-the-box situations where the updated code has received commits from another source than the one watched. By the way, it is quite generic so it probably can be easily used to do so.
+Its process is quite simple, and was **not** designed to handle out-of-the-box situations where the updated code has received commits from another source than the one being watched. By the way, it is quite generic so it probably can be easily used to do so.
 
 The git client used is the excellent [nodegit](http://www.nodegit.org/).
 
