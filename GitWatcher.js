@@ -18,13 +18,15 @@ class GitWatcher extends EventEmitter {
     }
 
     watch(refreshRate = 30000) {
-        const interval = setInterval(this.fetch, refreshRate);
+        this.fetch();
+        const interval = setInterval(this.fetch.bind(this), refreshRate);
         return () => {
             clearInterval(interval);
         };
     }
 
     fetch() {
+        console.log(Object.keys(this));
         this.repository.fetchAll()
         .then(() => {
             this.repository.getReferenceCommit(this.remoteBranch)
