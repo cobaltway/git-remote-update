@@ -29,9 +29,9 @@ Do the following:
 ```
 const gw = new GitWatcher();
 
-gw.on('ready', gw.watch);
-gw.on('newerCommit', gw.update);
-gw.on('updated', process.exit);
+gw.on('ready', () => gw.watch());
+gw.on('newerCommit', () => gw.update());
+gw.on('updated', () => process.exit());
 ```
 
 ## API

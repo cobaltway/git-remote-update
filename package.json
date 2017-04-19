@@ -1,6 +1,6 @@
 {
   "name": "git-remote-update",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A simple object to watch for git repo changes and update the local code",
   "main": "GitWatcher.js",
   "scripts": {
