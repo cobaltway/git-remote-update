@@ -27,7 +27,9 @@ Do the following:
 - On your code, there should be something like that, which will simply kill your script after an update is done (and forever will gently restart it):
 
 ```
-const gw = new GitWatcher();
+const gw = new GitWatcher({
+    git: './.git'
+});
 
 gw.on('ready', () => gw.watch());
 gw.on('newerCommit', () => gw.update());
